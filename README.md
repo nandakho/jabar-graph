@@ -7,6 +7,7 @@ pandas
 matplotlib.pyplot
 geopandas
 shapely.geometry
+adjustText
 ```
 
 ### Install Library:
@@ -15,6 +16,7 @@ pip install pandas
 pip install matplotlib
 pip install geopandas
 pip install shapely
+pip install adjustText
 ```
 
 ### Buat windows - Kalau gagal install geopandas:
