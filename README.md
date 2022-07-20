@@ -1,5 +1,15 @@
-# Peta Jalan Tol di Jawa Barat
-Menampilkan peta Jawa Barat dan jalan tolnya
+# Tentang Project Ini
+Menampilkan peta Jawa Barat, Kota-kota di Jawa Barat dan ~~Jalan Tol di Jawa Barat~~ Jalan antar Kota  
+_Jalan antar Kota merupakan gabungan Jalan Tol, Jalan Raya dan Jalan Lainnya (jika ada)_
+
+## File CSV
+### roadpoint.csv
+CSV ini berisikan data koordinat kota dan jalan penghubungnya, terdapat 4 kolom yaitu:
+1. **nama**: berisikan nama kota / jalan
+2. **tipe**: jenis data, diisikan _city_ untuk menampilkan data sebagai **Node** Kota atau _road_ untuk menampilkan data sebagai **Edges** Jalan antar Kota
+3. **length**: berisikan jarak jalan untuk tipe data _road_, **untuk tipe data _city_ kolom ini tidak digunakan**
+4. **koord**: berisikan titik koordinat data, berupa 1 titik `[Longitude] [Latitude]` dipisahkan dengan _spasi_ ` ` untuk tipe data _city_, atau berupa banyak titik koordinat `[Longitude] [Latitude]` untuk tipe data _road_ di mana setiap titiknya koordinatnya dipisahkan dengan _koma_ `,`
+~~tollpoint.csv hanya digunakan untuk mendukung argumen bahwa jalan tol tidak dapat menghubungkan setiap Node Kota~~
 
 ## Library Used
 ```
@@ -19,7 +29,7 @@ pip install shapely
 pip install adjustText
 ```
 
-### Buat windows - Kalau gagal install geopandas:
+### Untuk Pengguna Windows - Kalau gagal install geopandas:
 ```
 pip install pipwin
 pipwin install gdal
