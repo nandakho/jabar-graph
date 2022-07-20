@@ -8,8 +8,9 @@ CSV ini berisikan data koordinat kota dan jalan penghubungnya, terdapat 4 kolom 
 1. **nama**: berisikan nama kota / jalan
 2. **tipe**: jenis data, diisikan _city_ untuk menampilkan data sebagai **Node** Kota atau _road_ untuk menampilkan data sebagai **Edges** Jalan antar Kota
 3. **length**: berisikan jarak jalan untuk tipe data _road_, **untuk tipe data _city_ kolom ini tidak digunakan**
-4. **koord**: berisikan titik koordinat data, berupa 1 titik `[Longitude] [Latitude]` dipisahkan dengan _spasi_ ` ` untuk tipe data _city_, atau berupa banyak titik koordinat `[Longitude] [Latitude]` untuk tipe data _road_ di mana setiap titiknya koordinatnya dipisahkan dengan _koma_ `,`
-~~tollpoint.csv hanya digunakan untuk mendukung argumen bahwa jalan tol tidak dapat menghubungkan setiap Node Kota~~
+4. **koord**: berisikan titik koordinat data, berupa 1 titik `[Longitude] [Latitude]` dipisahkan dengan _spasi_ ` ` untuk tipe data _city_, atau berupa banyak titik koordinat `[Longitude] [Latitude]` untuk tipe data _road_ di mana setiap titiknya koordinatnya dipisahkan dengan _koma_ `,`  
+
+tollpoint.csv hanya digunakan untuk mendukung argumen bahwa jalan tol tidak dapat menghubungkan setiap Node Kota
 
 ## Library Used
 ```
